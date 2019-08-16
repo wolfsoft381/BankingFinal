@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".HomepageActivity">
+
+
+    <FrameLayout
+        android:id="@+id/framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottom_linear"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/white_bottom_rect"
+        android:layout_marginBottom="@dimen/margin_bottom_10"
+        android:layout_marginLeft="@dimen/margin_left_16"
+        android:layout_marginEnd="@dimen/margin_end_16"
+        android:layout_marginRight="@dimen/margin_right_16"
+        android:layout_marginStart="@dimen/margin_start_16"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/padding_12"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_home"/>
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/padding_12"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile"/>
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/padding_12"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"/>
+
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:padding="@dimen/padding_12"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_credit_cards_payment"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

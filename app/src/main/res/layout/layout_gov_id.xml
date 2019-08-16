@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_bg"
+        app:layout_constraintBottom_toBottomOf="@id/bottomTxt"
+        app:layout_constraintEnd_toEndOf="@id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintStart_toStartOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/topGuideline" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
+        app:layout_constraintTop_toTopOf="@id/view"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+    <!--android:orientation="vertical">-->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Selfie with Agent"
+        android:textColor="#de000000"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Verify that you’ve a PAN card"
+        android:textColor="#212121"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
+
+        app:layout_constraintLeft_toRightOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/linear"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="@dimen/_10sdp"-->
+        <!--android:text="Not Uploaded"-->
+        <!--android:layout_marginTop="@dimen/_3sdp"-->
+        <!--android:textColor="#99000000"-->
+        <!--android:textSize="@dimen/_10sdp"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/image"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/sub_title" />-->
+    <!--</LinearLayout>-->
+
+
+   <TextView
+       android:id="@+id/cancelTxt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Canceled! Invalid Document type. Please Reupload"
+       android:textSize="@dimen/_10sdp"
+       android:textColor="@color/red"
+       android:layout_marginTop="@dimen/_10sdp"
+       app:layout_constraintLeft_toLeftOf="@+id/leftGuideline2"
+       app:layout_constraintTop_toBottomOf="@+id/sub_title"/>
+
+    <!--this img in height is fixed set temperary bcz server side send program
+    atticaly adjust in that time chng height from the xml side-->
+    
+    
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="0dp"
+        android:layout_height="124dp"
+        android:src="@drawable/bg"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/cancelTxt"/>
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_grey_rect"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:text="Reupload"
+        android:textColor="@color/small_txt"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/bgImage" />
+
+    <TextView
+        android:id="@+id/bottomTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secondConstraint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/bottomTxt"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/topGuideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightGuideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/white_bg"
+            app:layout_constraintBottom_toBottomOf="@id/linear"
+            app:layout_constraintEnd_toEndOf="@id/rightGuideline3"
+            app:layout_constraintLeft_toRightOf="@id/image1"
+            app:layout_constraintStart_toStartOf="@id/leftGuideline3"
+            app:layout_constraintTop_toBottomOf="@id/topGuideline1" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_home"
+            app:layout_constraintLeft_toLeftOf="@id/leftGuideline21"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/_15sdp"-->
+        <!--android:orientation="vertical">-->
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Govt. ID Back"
+            android:textColor="#de000000"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline41"
+            app:layout_constraintLeft_toRightOf="@id/image1"
+            app:layout_constraintTop_toTopOf="@id/topGuideline1" />
+
+        <TextView
+            android:id="@+id/sub_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Verify that you’ve a PAN card"
+            android:textColor="#212121"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline41"
+            app:layout_constraintLeft_toRightOf="@id/image1"
+            app:layout_constraintTop_toBottomOf="@id/title1" />
+
+        <TextView
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="@dimen/_3sdp"
+
+            android:text="Pending"
+            android:textColor="#e97400"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline41"
+            app:layout_constraintLeft_toRightOf="@id/image1"
+            app:layout_constraintTop_toBottomOf="@id/sub_title1" />
+        <!--</LinearLayout>-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/js"
+            app:layout_constraintRight_toLeftOf="@id/rightGuideline21"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/plus"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/dotted_circle"-->
+        <!--android:padding="@dimen/_10sdp"-->
+        <!--android:src="@drawable/ic_plus"-->
+        <!--app:layout_constraintRight_toLeftOf="@id/rightGuideline2"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+
+

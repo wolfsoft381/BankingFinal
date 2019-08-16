@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="add_bank_account">Add Bank Account</string>
+    <string name="enter_your_bank_account_details">Enter Your Bank Account Details</string>
+    <string name="email">email</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_holders_name">Account Holders Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_cad_order_is_being_processed">Your cad order is being processed.</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="check_card_status">Check Card Status</string>
+    <string name="spent_this_month">Spent this month</string>
+    <string name="set_budget">Set Budget</string>
+    <string name="services">Services</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="income_proof">Income Proof</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.didik.component.StickyNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".SecondActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:src="@drawable/ic_back_black"
+            app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Loan"
+            android:textSize="@dimen/_24sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/_7sdp"
+            app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+            app:layout_constraintRight_toRightOf="@id/rightGuideline"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:tabIndicatorColor="@color/tabtxt_color"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/tabtxt_color"
+            app:tabTextAppearance="@style/MyMenuTextAppearance1"
+            app:tabTextColor="@color/tabtxt_color" />
+        <!--Viewpager used-->
+        <com.ws.design.Adapter.WrapContentHeightViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout">
+
+        </com.ws.design.Adapter.WrapContentHeightViewPager>
+
+    </android.support.constraint.ConstraintLayout>
+
+</me.didik.component.StickyNestedScrollView>

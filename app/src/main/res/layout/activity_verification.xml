@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".VerificationActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.15"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.85"
+        android:orientation="vertical" />
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_back_black"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline1"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline1"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/dark_green_circle"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dotted_line_green"
+            android:layerType="software" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/light_green_circle"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/light_gray_circle"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/light_gray_circle"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/identyfyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identity Verification"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/secondConstraint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_bg"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/identyfyTitle"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightGuideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.97" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/topGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightGuideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/white_bg"
+            app:layout_constraintBottom_toBottomOf="@id/linear"
+            app:layout_constraintEnd_toEndOf="@id/rightGuideline3"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintStart_toStartOf="@id/leftGuideline3"
+            app:layout_constraintTop_toBottomOf="@id/topGuideline" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_home"
+            app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/_15sdp"-->
+        <!--android:orientation="vertical">-->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Selfie with Agent"
+            android:textColor="#de000000"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+        <TextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Verify that you’ve a PAN card"
+            android:textColor="#212121"
+            android:textSize="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <TextView
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Uploaded"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="#4cb452"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
+            app:layout_constraintLeft_toRightOf="@id/image"
+            app:layout_constraintTop_toBottomOf="@id/sub_title" />
+        <!--</LinearLayout>-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/js"
+            app:layout_constraintRight_toLeftOf="@id/rightGuideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <!--<ImageView-->
+            <!--android:id="@+id/plus"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/dotted_circle"-->
+            <!--android:padding="@dimen/_10sdp"-->
+            <!--android:src="@drawable/ic_plus"-->
+            <!--app:layout_constraintRight_toLeftOf="@id/rightGuideline2"-->
+           <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/idtypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Govt. ID Type"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintTop_toBottomOf="@id/secondConstraint"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+
+   <include
+       android:id="@+id/second_Layout"
+       app:layout_constraintTop_toBottomOf="@+id/idtypeTitle"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/_10sdp"
+       app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+       app:layout_constraintRight_toRightOf="@id/rightGuideline"
+       layout="@layout/layout_gov_id"/>
+
+        <TextView
+            android:id="@+id/incomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income Proof"
+            android:textSize="@dimen/_22sdp"
+            app:layout_constraintTop_toBottomOf="@id/second_Layout"
+            app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/upload_doc_recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/incomeTitle"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+            app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+            android:clipToPadding="false"
+            android:layout_marginTop="@dimen/_7sdp"/>
+
+        <Button
+            android:id="@+id/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:text="Reviee T &amp; C"
+            app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+            app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+           app:layout_constraintTop_toBottomOf="@id/upload_doc_recyclerview"/>
+
+        <View
+
+            app:layout_constraintTop_toBottomOf="@+id/Button"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

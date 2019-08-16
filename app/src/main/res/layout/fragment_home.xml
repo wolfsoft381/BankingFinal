@@ -1,0 +1,201 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+
+    tools:context="com.ws.design.fragment.HomeFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:id="@+id/main">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/leftGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.05"
+            android:orientation="vertical" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/rightGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.95"
+            android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:id="@+id/black_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/main"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/blue_rect">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/congratulations"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textSize="@dimen/_18sdp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:text="@string/your_cad_order_is_being_processed"
+            android:textColor="#99ffffff"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/check_card_status"
+            android:gravity="center"
+            android:background="@drawable/ligght_white_rect"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/white_linear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/black_linear"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/white_bottom_rect1"
+        android:elevation="1.5dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/spent_this_month"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/small_txt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_22sdp"
+                android:text="RS 0.00"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="#cccccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/set_budget"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/small_txt"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/small_txt"
+                android:textSize="@dimen/_12sdp"
+                android:text="₹3230"/>
+        </LinearLayout>
+
+
+        <SeekBar
+            android:id="@+id/pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="1.5dp"
+            android:minHeight="1.5dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:progressDrawable="@drawable/seekbar_bg"
+            android:thumb="@drawable/seekbar_circle"
+            android:max="100"
+            android:progress="50"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_expense"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/light_blue_rect1"
+            android:padding="@dimen/margin_bottom_10"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/service_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/services"
+        android:textSize="@dimen/_24sdp"
+        android:textColor="@color/small_txt"
+        app:layout_constraintTop_toBottomOf="@id/white_linear"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+        android:layout_marginTop="@dimen/margin_top_25"/>
+
+    <android.support.v7.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@+id/service_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:nestedScrollingEnabled="false"
+        android:paddingBottom="65dp"
+        android:id="@+id/services_recyclerview"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".SecondActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintGuide_percent="0.20"
+        android:orientation="horizontal" />
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/bottomGuideline"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/btn_Select_Plan"-->
+        <!--app:layout_constraintGuide_percent="0.65"-->
+        <!--android:orientation="horizontal" />-->
+
+    <android.support.constraint.Guideline
+        android:id="@+id/leftGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.10"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/rightGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.90"
+        android:orientation="vertical" />
+
+
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_back_black"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+        android:text="@string/add_bank_account"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/title"
+        android:textSize="28sp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/white_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/edt3"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline"
+        app:layout_constraintTop_toTopOf="@+id/band_detail_txt" />
+
+
+    <TextView
+        android:id="@+id/band_detail_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
+        app:layout_constraintTop_toBottomOf="@id/topGuideline"
+        android:text="@string/enter_your_bank_account_details"
+        android:paddingTop="@dimen/_15sdp"
+        android:textColor="@color/black"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edt1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:outlineProvider="paddedBounds"
+        app:layout_constraintTop_toBottomOf="@id/band_detail_txt"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline2"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
+        android:theme="@style/LoginTextInputLayoutStyle"
+        android:outlineAmbientShadowColor="@color/black"
+        android:textColorHint="@color/sky">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_11sdp"
+            android:padding="@dimen/padding_15"
+            android:hint="@string/email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:id="@+id/edt2"
+        android:layout_height="wrap_content"
+        android:outlineProvider="paddedBounds"
+        app:layout_constraintTop_toBottomOf="@id/edt1"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline2"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
+        android:theme="@style/LoginTextInputLayoutStyle"
+        android:outlineAmbientShadowColor="@color/black"
+        android:textColorHint="@color/sky">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_11sdp"
+            android:padding="@dimen/_11sdp"
+            android:hint="@string/email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:id="@+id/edt3"
+        android:layout_height="wrap_content"
+        android:outlineProvider="paddedBounds"
+        app:layout_constraintTop_toBottomOf="@id/edt2"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        app:layout_constraintRight_toRightOf="@id/rightGuideline2"
+        app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
+        android:theme="@style/LoginTextInputLayoutStyle"
+        android:outlineAmbientShadowColor="@color/black"
+        android:textColorHint="@color/sky">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_11sdp"
+            android:padding="@dimen/_11sdp"
+            android:hint="@string/email" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_Select_Plan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edt3"
+        app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
+        app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+        android:textColor="@color/white"
+        android:background="@drawable/red_bg"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="SELECT PLAN"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_start_24">24dp</dimen>
+    <dimen name="margin_left_24">24dp</dimen>
+    <dimen name="margin_top_20">20dp</dimen>
+    <dimen name="margin_left_16">16dp</dimen>
+    <dimen name="margin_start_16">16dp</dimen>
+    <dimen name="margin_right_16">16dp</dimen>
+    <dimen name="margin_end_16">16dp</dimen>
+    <dimen name="margin_top_24">24dp</dimen>
+    <dimen name="padding_bottom_24">24dp</dimen>
+    <dimen name="padding_top_24">24dp</dimen>
+    <dimen name="padding_left_16">16dp</dimen>
+    <dimen name="padding_right_16">16dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="margin_bottom_10">10dp</dimen>
+    <dimen name="padding_12">12sp</dimen>
+    <dimen name="margin_top_16">16dp</dimen>
+    <dimen name="margin_top_52">52dp</dimen>
+    <dimen name="margin_top_38">38dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_top_25">25dp</dimen>
+</resources>
