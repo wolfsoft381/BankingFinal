@@ -21,7 +21,7 @@ public class VerificationActivity extends AppCompatActivity {
     private IncomeProofRecycleAdapter bAdapterLike;
 
     private Integer image[] = {R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher};
-    private String title[] = {"Selfie with Agent","Agreement Form","Selfie with Agent"};
+    private String title[] = {"Pan Card","Employment Proof","Other Documents"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

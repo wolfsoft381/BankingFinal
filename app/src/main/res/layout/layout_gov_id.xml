@@ -84,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
-        android:text="Selfie with Agent"
+        android:text="@string/selfie_with_agent"
         android:textColor="#de000000"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
@@ -95,34 +95,22 @@
         android:id="@+id/sub_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="To Verify that you’ve a PAN card"
+        android:text="@string/to_verify_that_you_ve_a_pan_card"
         android:textColor="#212121"
         android:textSize="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_3sdp"
         app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
-
         app:layout_constraintLeft_toRightOf="@id/image"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <!--<TextView-->
-        <!--android:id="@+id/linear"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:paddingBottom="@dimen/_10sdp"-->
-        <!--android:text="Not Uploaded"-->
-        <!--android:layout_marginTop="@dimen/_3sdp"-->
-        <!--android:textColor="#99000000"-->
-        <!--android:textSize="@dimen/_10sdp"-->
-        <!--app:layout_constraintLeft_toRightOf="@id/image"-->
-        <!--app:layout_constraintTop_toBottomOf="@id/sub_title" />-->
-    <!--</LinearLayout>-->
+
 
 
    <TextView
        android:id="@+id/cancelTxt"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="Canceled! Invalid Document type. Please Reupload"
+       android:text="@string/canceled_invalid_document_type_please_reupload"
        android:textSize="@dimen/_10sdp"
        android:textColor="@color/red"
        android:layout_marginTop="@dimen/_10sdp"
@@ -154,7 +142,7 @@
         android:background="@drawable/light_grey_rect"
         android:gravity="center"
         android:padding="@dimen/_12sdp"
-        android:text="Reupload"
+        android:text="@string/reupload"
         android:textColor="@color/small_txt"
         android:layout_margin="@dimen/_10sdp"
         app:layout_constraintTop_toBottomOf="@id/bgImage" />
@@ -245,19 +233,14 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <!--<LinearLayout-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_gravity="center"-->
-        <!--android:layout_marginLeft="@dimen/_15sdp"-->
-        <!--android:orientation="vertical">-->
+
 
         <TextView
             android:id="@+id/title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="Govt. ID Back"
+            android:text="@string/govt_id_back"
             android:textColor="#de000000"
             android:textSize="@dimen/_14sdp"
             app:layout_constraintLeft_toLeftOf="@+id/leftGuideline41"
@@ -268,7 +251,7 @@
             android:id="@+id/sub_title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="To Verify that you’ve a PAN card"
+            android:text="@string/to_verify_that_you_ve_a_pan_card"
             android:textColor="#212121"
             android:textSize="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_3sdp"
@@ -281,8 +264,7 @@
             android:layout_width="wrap_content"
             android:layout_height="23dp"
             android:layout_marginTop="@dimen/_3sdp"
-
-            android:text="Pending"
+            android:text="@string/pending"
             android:textColor="#e97400"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintLeft_toLeftOf="@+id/leftGuideline41"

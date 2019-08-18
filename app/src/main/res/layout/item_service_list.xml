@@ -44,7 +44,7 @@
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:text="Amazon"/>
+                android:text="@string/amazon"/>
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>

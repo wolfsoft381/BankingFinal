@@ -64,14 +64,6 @@
 
 
 
-    <!--<ImageView-->
-        <!--android:id="@+id/ivLogo"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:layout_constraintTop_toTopOf="parent"-->
-        <!--android:src="@drawable/ic_back_black"-->
-        <!--android:layout_marginTop="@dimen/_20sdp"-->
-        <!--app:layout_constraintLeft_toRightOf="@+id/leftGuideline" />-->
 
 
 
@@ -79,9 +71,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="@+id/leftGuideline"
-        android:text="Tell us more about \nyourself"
+        android:text="@string/tell_us_more_about_nyourself"
         app:layout_constraintTop_toTopOf="@+id/startGuideline"
-
         android:id="@+id/title"
         android:textSize="28sp"/>
 
@@ -89,7 +80,6 @@
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
         android:background="@drawable/white_bg"
         app:layout_constraintBottom_toBottomOf="@+id/edt4"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
@@ -127,10 +117,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:textSize="@dimen/_11sdp"
             android:padding="@dimen/padding_15"
-            android:hint="@string/email" />
+            android:hint="@string/full_name_as_in_aadhaar" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -178,17 +168,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:textSize="@dimen/_11sdp"
             android:padding="@dimen/_11sdp"
-            android:hint="@string/email" />
+            android:hint="@string/date_of_birth" />
     </android.support.design.widget.TextInputLayout>
 
     <TextView
         android:id="@+id/genderTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gender"
+        android:text="@string/gender"
         app:layout_constraintTop_toBottomOf="@id/edt3"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
         android:textColor="@color/red"/>
@@ -207,7 +197,7 @@
            android:layout_height="wrap_content"
            android:layout_marginTop="@dimen/_15sdp"
            android:layout_marginLeft="@dimen/_10sdp"
-           android:text="Male"/>
+           android:text="@string/male"/>
 
 
         <RadioButton
@@ -215,7 +205,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp"
-            android:text="Female"/>
+            android:text="@string/female"/>
 
     </RadioGroup>
 
@@ -240,10 +230,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:textSize="@dimen/_11sdp"
             android:padding="@dimen/_11sdp"
-            android:hint="@string/email" />
+            android:hint="@string/referral_code_optional" />
     </android.support.design.widget.TextInputLayout>
 
 
@@ -259,7 +249,15 @@
         android:textColor="@color/white"
         android:background="@drawable/red_bg"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="CONTINUE"/>
+        android:text="@string/continue1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/btn_Select_Plan"/>
 
     </android.support.constraint.ConstraintLayout>
 

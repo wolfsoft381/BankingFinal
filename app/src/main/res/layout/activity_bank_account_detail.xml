@@ -86,6 +86,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_home_red"
         android:layout_marginTop="@dimen/_10sdp"
+        android:paddingTop="@dimen/_15sdp"
         app:layout_constraintRight_toRightOf="@id/rightGuideline2"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
         app:layout_constraintTop_toBottomOf="@id/ivLogo"/>
@@ -98,7 +99,7 @@
         app:layout_constraintTop_toBottomOf="@id/icon"
         app:layout_constraintRight_toRightOf="@id/rightGuideline2"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline2"
-        android:text="Bank Account Details"
+        android:text="@string/bank_account_details"
         android:paddingTop="@dimen/_15sdp"
         android:textColor="@color/black"/>
 

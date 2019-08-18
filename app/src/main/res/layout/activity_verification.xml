@@ -113,7 +113,7 @@
         android:id="@+id/identyfyTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Identity Verification"
+        android:text="@string/identity_verification"
         android:textSize="@dimen/_22sdp"
         app:layout_constraintTop_toBottomOf="@id/linearLayout"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
@@ -209,7 +209,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
-            android:text="Selfie with Agent"
+            android:text="@string/selfie_with_agent"
             android:textColor="#de000000"
             android:textSize="@dimen/_14sdp"
             app:layout_constraintLeft_toLeftOf="@+id/leftGuideline4"
@@ -220,7 +220,7 @@
             android:id="@+id/sub_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="To Verify that you’ve a PAN card"
+            android:text="@string/to_verify_that_you_ve_a_pan_card"
             android:textColor="#212121"
             android:textSize="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_3sdp"
@@ -233,7 +233,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/_10sdp"
-            android:text="Uploaded"
+            android:text="@string/uploaded"
             android:layout_marginTop="@dimen/_3sdp"
             android:textColor="#4cb452"
             android:textSize="@dimen/_10sdp"
@@ -253,25 +253,13 @@
             app:layout_constraintBottom_toBottomOf="parent" />
 
 
-        <!--<ImageView-->
-            <!--android:id="@+id/plus"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:background="@drawable/dotted_circle"-->
-            <!--android:padding="@dimen/_10sdp"-->
-            <!--android:src="@drawable/ic_plus"-->
-            <!--app:layout_constraintRight_toLeftOf="@id/rightGuideline2"-->
-           <!--app:layout_constraintTop_toTopOf="parent"-->
-            <!--app:layout_constraintBottom_toBottomOf="parent"/>-->
-
     </android.support.constraint.ConstraintLayout>
 
     <TextView
         android:id="@+id/idtypeTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Govt. ID Type"
+        android:text="@string/govt_id_type"
         android:textSize="@dimen/_22sdp"
         app:layout_constraintTop_toBottomOf="@id/secondConstraint"
         app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
@@ -292,7 +280,7 @@
             android:id="@+id/incomeTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Income Proof"
+            android:text="@string/income_proof"
             android:textSize="@dimen/_22sdp"
             app:layout_constraintTop_toBottomOf="@id/second_Layout"
             app:layout_constraintLeft_toLeftOf="@id/leftGuideline"
