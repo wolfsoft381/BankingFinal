@@ -32,10 +32,10 @@ public class CardFragment extends Fragment {
     private RecyclerView recyclerViewLike;
     private LoanRecycleAdapter bAdapterLike;
 
-    private Integer image[] = {R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher};
-    private String title[] = {"Smart Card","Active Loans","Pending Loans","Awaiting Loans","Completed Loans"};
+    private Integer image[] = {R.drawable.ic_smark_card,R.drawable.ic_active_loan,R.drawable.ic_pending_loan,R.drawable.ic_awaiting_loans,R.drawable.ic_completed_loans,R.drawable.ic_cancelled_loan};
+    private String title[] = {"Smart Card","Active Loans","Pending Loans","Awaiting Loans","Completed Loans","Cancelled Loans"};
     private String sub_title[] = {"Check Card Balance and Loan","Payment dues and balance","Pending Loans",
-    "Awaiting Loans","Completed Loans"};
+    "Awaiting Loans","Completed Loans","Cancelled Loans"};
 
 
     @Override

@@ -74,7 +74,7 @@ public class LoanRecycleAdapter extends RecyclerView.Adapter<LoanRecycleAdapter.
 
 
 
-        if(position==4){
+        if(position==5){
 
             holder.view_line.setVisibility(View.GONE);
         }
