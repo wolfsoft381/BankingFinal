@@ -20,7 +20,7 @@ public class UploadDocActivity extends AppCompatActivity {
     private RecyclerView recyclerViewLike;
     private UploadDocRecycleAdapter bAdapterLike;
 
-    private Integer image[] = {R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher};
+    private Integer image[] = {R.drawable.pan_card,R.drawable.pan_card,R.drawable.pan_card};
     private String title[] = {"Selfie with Agent","Agreement Form","Selfie with Agent"};
 
     @Override

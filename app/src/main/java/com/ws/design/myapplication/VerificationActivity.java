@@ -20,7 +20,7 @@ public class VerificationActivity extends AppCompatActivity {
     private RecyclerView recyclerViewLike;
     private IncomeProofRecycleAdapter bAdapterLike;
 
-    private Integer image[] = {R.mipmap.ic_launcher,R.mipmap.ic_launcher,R.mipmap.ic_launcher};
+    private Integer image[] = {R.drawable.pan_card,R.drawable.employment_proof,R.drawable.other_documents};
     private String title[] = {"Pan Card","Employment Proof","Other Documents"};
 
     @Override
